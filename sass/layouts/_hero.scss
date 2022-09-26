@@ -1,0 +1,42 @@
+.hero {
+  background: $hdr-ftr-bg-cl;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/Teamwork.jpg);
+  background-color: $overline-bg-cl;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__heading {
+    width: 700px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light-txt-cl;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__btn {
+    width: 216px;
+    background-color: $accent-bg-cl;
+
+    transition: background-color $animation;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: $accent-hdr-cl;
+  }
+}

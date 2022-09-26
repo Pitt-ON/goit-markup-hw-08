@@ -1,0 +1,36 @@
+.header-contacts {
+  @extend %list;
+
+  display: flex;
+  margin-left: auto;
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    @extend %link;
+
+    @include flex(flex, center, center);
+
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: $secondary-txt-cl;
+
+    transition: color $animation;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-txt-cl;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,18 @@
+.logo {
+  @extend %link;
+
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: $accent-txt-cl;
+
+  &__dark {
+    color: $logo-txt-cl;
+  }
+
+  &__light {
+    color: $light-txt-cl;
+  }
+}

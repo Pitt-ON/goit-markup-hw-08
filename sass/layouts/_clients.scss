@@ -1,0 +1,52 @@
+.clients {
+  @include section(94px, 94px, null);
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $basic-txt-cl;
+  }
+
+  &__list {
+    @extend %list;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    // @include item(5, $interval), 6);
+    width: 170px;
+    height: 92px;
+    --items: 6;
+  }
+
+  &__link {
+    @extend %link;
+
+    @include flex(flex, center, center);
+
+    border: 1px solid $icon-cl;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    color: $icon-cl;
+    outline: transparent;
+
+    transition: color $animation, border-color $animation;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-txt-cl;
+    border-color: $accent-bg-cl;
+  }
+}

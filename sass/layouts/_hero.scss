@@ -1,15 +1,29 @@
 .hero {
-  // background: $hdr-ftr-bg-cl;
-  // text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  background: $hdr-ftr-bg-cl;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  max-width: 1600px;
-  min-height: 600px;
+  min-width: 480px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: $overline-bg-cl;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    min-height: 600px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: $overline-bg-cl;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+
 
   // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/Teamwork.jpg);
   // background-position: center;
@@ -17,27 +31,34 @@
   // background-size: cover;
 
   &__heading {
-    // width: 700px;
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: calc(60 / 44);
-    // letter-spacing: 0.06em;
-    // text-transform: uppercase;
-    // color: $light-txt-cl;
-    // margin-bottom: 30px;
-    // margin-left: auto;
-    // margin-right: auto;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light-txt-cl;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      width: 700px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
   }
 
   &__btn {
-    // width: 216px;
-    // background-color: $accent-bg-cl;
+    display: block;
+    margin: 0 auto;
+    background-color: $accent-bg-cl;
 
-    // transition: background-color $animation;
+    transition: background-color $animation;
   }
 
   &__btn:hover,
   &__btn:focus {
-    // background-color: $accent-hdr-cl;
+    background-color: $accent-hdr-cl;
   }
 }

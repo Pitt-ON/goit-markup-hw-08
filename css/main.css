@@ -55,6 +55,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -178,12 +179,61 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
+  background: #2f303a;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  min-width: 480px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #c4c4c4;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #c4c4c4;
+    -webkit-box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.hero__heading {
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6153846154;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__heading {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
+}
+.hero__btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #2196f3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: #188ce8;
+}
+
 .register-form__title {
   display: block;
   text-align: center;
@@ -343,6 +393,16 @@ body {
   background-color: #188ce8;
 }
 
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .services {
   padding-bottom: 94px;
 }
@@ -618,16 +678,21 @@ body {
 
 .btn {
   min-height: 50px;
+  min-width: 200px;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  padding: 10px;
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    min-width: 216px;
+  }
 }
 
 .logo {

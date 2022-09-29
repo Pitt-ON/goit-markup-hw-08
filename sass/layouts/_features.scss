@@ -6,34 +6,43 @@
   }
 
   &__list {
-    // @extend %list;
+    @extend %list;
 
-    // --items: 4;
+    // @media screen and (min-width: 1200px) {
+    //   --items: 4;
+    // }
+
   }
 
   &__wrap {
-    // @include flex(flex, center, center);
+    @include flex(flex, center, center);
 
-    // height: 120px;
-    // border-radius: 4px;
-    // margin-bottom: 30px;
-    // background-color: $team-bg-cl;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: $team-bg-cl;
   }
 
   &__title {
-    // margin-bottom: 10px;
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: calc(16 / 14);
-    // letter-spacing: 0.03em;
-    // text-transform: uppercase;
-    // color: $basic-txt-cl;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $basic-txt-cl;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__text {
-    // font-size: 14px;
-    // line-height: calc(24 / 14);
-    // letter-spacing: 0.03em;
-    // color: $secondary-txt-cl;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $secondary-txt-cl;
   }
 }

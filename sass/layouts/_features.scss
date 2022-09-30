@@ -8,9 +8,14 @@
   &__list {
     @extend %list;
 
-    // @media screen and (min-width: 1200px) {
-    //   --items: 4;
-    // }
+    @media screen and (min-width: 768px) {
+      --items: 4;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      --items: 4;
+    }
 
   }
 
@@ -33,9 +38,7 @@
     color: $basic-txt-cl;
 
     @media screen and (max-width: 767px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
     }
   }
 

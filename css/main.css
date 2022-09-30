@@ -188,7 +188,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
   }
@@ -401,6 +401,18 @@ body {
   .features {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    --items: 4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    --items: 4;
   }
 }
 .features__wrap {

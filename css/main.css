@@ -407,7 +407,6 @@ body {
   .features__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    --items: 4;
   }
 }
 .features__wrap {

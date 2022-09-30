@@ -1,4 +1,10 @@
 .services {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
   @include section(null, 94px, null);
 
   &__title {
@@ -8,7 +14,7 @@
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--basic-txt-cl);
+    color: $basic-txt-cl;
   }
 
   &__list {
@@ -32,7 +38,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 
     text-transform: uppercase;
-    color: var(--light-txt-cl);
+    color: $light-txt-cl;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);

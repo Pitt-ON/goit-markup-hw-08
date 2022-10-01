@@ -1013,6 +1013,11 @@ body {
   border: none;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
 
 .menu-container {
   position: fixed;
@@ -1036,6 +1041,11 @@ body {
   transition: -webkit-transform 400ms;
   transition: transform 400ms;
   transition: transform 400ms, -webkit-transform 400ms;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);

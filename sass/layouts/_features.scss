@@ -8,11 +8,13 @@
   &__list {
     @extend %list;
 
-    // @media screen and (min-width: 768px) {
-    //   --items: 4;
-    // }
+    @media screen and (min-width: 768px) {
+      $items: 2;
+      flex-wrap: wrap;
+    }
 
     @media screen and (min-width: 1200px) {
+      $items: 4;
       flex-wrap: nowrap;
     }
   }
@@ -24,6 +26,14 @@
     border-radius: 4px;
     margin-bottom: 30px;
     background-color: $team-bg-cl;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__title {
@@ -45,5 +55,9 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: $secondary-txt-cl;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 354px;
+    }
   }
 }

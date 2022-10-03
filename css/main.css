@@ -706,36 +706,84 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
 }
 
 .foofer__wrap {
-  min-width: 231px;
-  margin-right: 70px;
+  min-width: 232px;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .foofer__wrap {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foofer__wrap {
+    margin-left: 76px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foofer__wrap {
+    margin-right: 70px;
+    text-align: left;
+  }
 }
 
 .footer-contacts {
   font-style: normal;
 }
 .footer-contacts__text {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .footer-contacts__text {
+    margin-bottom: 9px;
+  }
+}
 .footer-contacts__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts__item {
+    margin-bottom: 9px;
+  }
 }
 .footer-contacts__link {
   font-size: 14px;
@@ -754,16 +802,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 93px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 .join__title {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
 }
 
 .portfolio {
@@ -863,10 +928,16 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 .logo__dark {
   color: #000000;

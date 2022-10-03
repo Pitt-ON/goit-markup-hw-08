@@ -6,15 +6,23 @@
   }
 
   &__text {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: $light-txt-cl;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__link {

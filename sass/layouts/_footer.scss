@@ -1,18 +1,48 @@
 .footer {
   @include section(60px, 60px, $hdr-ftr-bg-cl);
 
+  &__container {
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
   &__logo {
     display: block;
     margin-bottom: 20px;
-  }
 
-  &__container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }
 
 .foofer__wrap {
-  min-width: 231px;
-  margin-right: 70px;
+  min-width: 232px;
+  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 76px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    text-align: left;
+  }
 }

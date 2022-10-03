@@ -21,12 +21,13 @@
     @extend %list;
 
     @extend %flex;
-
-    $items: 3;
   }
 
   &__item {
     @extend %flex__item;
+
+    width: 370px;
+    $items: 3;
   }
 
   &__thumb {

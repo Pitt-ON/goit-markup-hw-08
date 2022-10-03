@@ -9,27 +9,19 @@
     @extend %list;
 
     @extend %flex;
-
-    @media screen and (min-width: 768px) {
-      $items: 2;
-    }
-
-    @media screen and (min-width: 1200px) {
-      $items: 4;
-    }
   }
 
   &__item {
     @extend %flex__item;
 
-    width: 100%;
-
     @media screen and (min-width: 768px) {
       width: 354px;
+      $items: 2;
     }
 
     @media screen and (min-width: 1200px) {
       width: 270px;
+      $items: 4;
     }
   }
 

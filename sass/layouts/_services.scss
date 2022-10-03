@@ -19,6 +19,14 @@
 
   &__list {
     @extend %list;
+
+    @extend %flex;
+
+    $items: 3;
+  }
+
+  &__item {
+    @extend %flex__item;
   }
 
   &__thumb {

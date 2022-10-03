@@ -1,28 +1,49 @@
 .clients {
-  @include section(94px, 94px, null);
+  @include section(60px, 60px, null);
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, null);
+  }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
+    font-size: 28px;
+    line-height: calc(33 / 28);
     text-align: center;
     letter-spacing: 0.03em;
     color: $basic-txt-cl;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
   }
 
   &__list {
     @extend %list;
 
-    display: flex;
-    justify-content: center;
+    @extend %flex;
   }
 
   &__item {
-    // @include item(5, $interval), 6);
-    width: 170px;
+    @extend %flex__item;
+
+    width: 210px;
     height: 92px;
-    --items: 6;
+    --items: 2;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      --items: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      --items: 6;
+    }
+
   }
 
   &__link {

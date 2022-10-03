@@ -9,8 +9,4 @@
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: $light-txt-cl;
-
-  @media screen and (min-width: 1200px) {
-    min-width: 216px;
-  }
 }

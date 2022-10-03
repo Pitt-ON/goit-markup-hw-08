@@ -1,27 +1,49 @@
-.header-contacts {
+.contacts {
+  display: none;
 
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.header-contacts {
   @extend %list;
 
-  display: flex;
-  margin-left: auto;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   &__item {
-    margin-right: 50px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   &__link {
     @extend %link;
 
-    @include flex(flex, center, center);
+    @include flex(flex, nule, center);
 
     gap: 10px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: $secondary-txt-cl;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     transition: color $animation;
   }

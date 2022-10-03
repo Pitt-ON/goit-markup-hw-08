@@ -1061,6 +1061,9 @@ body {
   background-color: #2196f3;
 }
 
+.subscription {
+  margin: 0 auto;
+}
 .subscription__title {
   display: block;
   text-align: center;
@@ -1155,7 +1158,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  width: 200px;
+  margin: 0 auto;
   background-color: #2196f3;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

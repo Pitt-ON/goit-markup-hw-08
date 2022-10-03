@@ -1,4 +1,6 @@
 .subscription {
+  margin: 0 auto;
+
 
   &__title {
     display: block;
@@ -65,7 +67,8 @@
     @include flex(flex, center, center);
 
     gap: 10px;
-    width: 200px;
+
+    margin: 0 auto;
 
     background-color: $accent-bg-cl;
 

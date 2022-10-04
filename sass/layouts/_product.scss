@@ -1,6 +1,12 @@
 .product {
   &__list {
     @extend %list;
+
+    @extend %flex;
+  }
+
+  &__item {
+    @extend %flex__item;
   }
 
   &__link {

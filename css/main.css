@@ -294,6 +294,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 479px) {
+  .hero__heading {
+    font-size: 6vw;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__heading {
     width: 700px;
@@ -698,18 +703,15 @@ body {
 .clients__item {
   width: 210px;
   height: 92px;
-  --items: 2;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
     width: 226px;
-    --items: 3;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
     width: 170px;
-    --items: 6;
   }
 }
 .clients__link {
@@ -952,6 +954,7 @@ body {
           transform: translateY(0);
 }
 .product__features {
+  overflow-y: scroll;
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;

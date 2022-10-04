@@ -73,6 +73,8 @@
   }
 
   &__features {
+    overflow-y: scroll;
+
     font-size: 18px;
     line-height: calc(28 / 18);
     letter-spacing: 0.03em;

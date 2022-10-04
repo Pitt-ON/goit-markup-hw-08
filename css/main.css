@@ -1223,20 +1223,20 @@ body {
 }
 
 .filters__list {
-  display: inline-block;
-  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  width: 326px;
+  height: 91px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filters__list {
     width: 575px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 8px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: auto;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -1245,19 +1245,6 @@ body {
 @media screen and (min-width: 1200px) {
   .filters__list {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .filters__item {
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 8px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .filters__item:nth-child(n+4) {
-    margin-bottom: 0;
   }
 }
 

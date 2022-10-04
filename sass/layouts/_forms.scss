@@ -104,6 +104,10 @@
     margin-bottom: 30px;
   }
 
+  &__checkbox {
+    @extend %visually-hidden;
+  }
+
   &__checked {
     opacity: 0;
     transition: opasity $animation;

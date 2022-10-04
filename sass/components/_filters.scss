@@ -1,3 +1,7 @@
+.filters__title {
+  @extend %visually-hidden;
+}
+
 .filters__list {
   @extend %list;
 

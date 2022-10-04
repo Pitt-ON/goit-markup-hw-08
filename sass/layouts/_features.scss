@@ -5,6 +5,10 @@
     @include section(94px, 94px, null);
   }
 
+  &__heading {
+    @extend %visually-hidden;
+  }
+
   &__list {
     @extend %list;
 

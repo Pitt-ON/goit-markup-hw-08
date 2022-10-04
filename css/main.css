@@ -2,20 +2,6 @@
 /* Text colors */
 /* Background colors */
 /* Others */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .mobile-socials__link, .mobile-contacts__mail, .mobile-contacts__tel, .mobile-menu__link, .socials__link, .logo, .product__link, .footer-contacts__link, .clients__link, .register-form__link, .header-contacts__link, .nav__link {
   text-decoration: none;
   color: currentColor;
@@ -39,6 +25,20 @@
 .clients__item, .team__item, .services__item, .features__item {
   -ms-flex-preferred-size: calc((100% - 90px - 1) / 3);
       flex-basis: calc((100% - 90px - 1) / 3);
+}
+
+.filters__title, .features__heading, .register-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h1,
@@ -885,8 +885,14 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .product__link {

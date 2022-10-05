@@ -11,10 +11,12 @@
 
     @media screen and (min-width: 768px) {
       width: 354px;
+      display: flex;
     }
 
     @media screen and (min-width: 1200px) {
       width: 370px;
+
     }
   }
 
@@ -22,6 +24,11 @@
     @extend %link;
 
     display: block;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     transition: box-shadow $animation;
   }
@@ -88,7 +95,7 @@
     border-bottom: $portfolio-brd-cl;
 
     @media screen and (min-width: 768px) {
-      height: 147px;
+      flex-grow: 1;
     }
   }
 

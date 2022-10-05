@@ -16,7 +16,7 @@
 }
 
 %flex__item {
-  flex-basis: calc((100% - $indent * $items - 1) / $items);
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }
 
 %visually-hidden {

@@ -4,10 +4,16 @@
   background-color: $bgc;
 }
 
-@mixin flex($d, $jc, $ai) {
+@mixin flex($d, $jc, $ai, $gap: $gap, $fw) {
   display: $d;
   justify-content: $jc;
   align-items: $ai;
+  gap: $gap;
+  flex-wrap: $fw;
+}
+
+@mixin item($q-gap, $gap, $q-item) {
+  flex-basis: calc((100% - #{$q-gap} * #{$gap}) / #{$q-item});
 }
 
 // @mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
@@ -17,8 +23,4 @@
 //   line-height: $lh;
 //   letter-spacing: $ls;
 //   color: $fc;
-// }
-
-// @mixin item($q-gap, $gap, $q-item) {
-//   flex-basis: calc((100% - #{$q-gap} * #{$gap}) / #{$q-item});
 // }

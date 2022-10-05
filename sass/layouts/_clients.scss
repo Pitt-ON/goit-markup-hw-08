@@ -24,27 +24,30 @@
   &__list {
     @extend %list;
 
-    @extend %flex;
+    @include flex(flex, center, center, wrap);
+
+    // @media screen and (min-width: 768px) {
+    //   @include flex(center, center);
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   @include flex(center, center);
+    // }
   }
 
   &__item {
-    @extend %flex__item;
+    height: 92px;
 
-    // width: 210px;
-    // height: 92px;
-    $items: 2;
+    @include item(1, $gap, 2);
 
     @media screen and (min-width: 768px) {
-      width: 226px;
-      $items: 3;
+      @include item(2, $gap, 3);
     }
 
     @media screen and (min-width: 1200px) {
-      width: 170px;
-      $items: 6;
+      @include item(5, $gap, 6);
     }
   }
-
 
   &__link {
     @extend %link;

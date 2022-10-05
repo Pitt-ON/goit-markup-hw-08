@@ -11,28 +11,29 @@
 
   &__list {
     @extend %list;
+    display: block;
 
-    @extend %flex;
+    @media screen and (min-width: 768px) {
+      @include flex(flex, center, center, $gap, wrap);
+    }
   }
 
   &__item {
-    @extend %flex__item;
+    height: 224px;
 
     @media screen and (min-width: 768px) {
-      width: 354px;
-      $items: 2;
+      @include item(1, $gap, 2);
     }
 
     @media screen and (min-width: 1200px) {
-      width: 270px;
-      $items: 4;
+      @include item(3, $gap, 4);
     }
   }
 
   &__wrap {
     @include flex(flex, center, center);
 
-    height: 120px;
+    height: 100%;
     border-radius: 4px;
     margin-bottom: 30px;
     background-color: $team-bg-cl;

@@ -1170,9 +1170,9 @@ body {
   height: 44px;
 }
 .socials__link {
-  -ms-flex-wrap: flex;
-      flex-wrap: flex;
-  display: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

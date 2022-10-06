@@ -13,7 +13,7 @@
   &__link {
     @extend %link;
 
-    @include flex(flex, center, center);
+    @include flex();
 
     border: none;
     width: 100%;

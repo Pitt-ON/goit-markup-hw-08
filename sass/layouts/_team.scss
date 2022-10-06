@@ -23,31 +23,40 @@
 
   &__list {
     @extend %list;
+    display: block;
 
-
+    @media screen and (min-width: 768px) {
+      @include flex(wrap);
+    }
   }
 
   &__item {
-
+    margin-bottom: 30px;
 
     background: $basic-bg-cl;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
     @media screen and (min-width: 768px) {
-      width: 354px;
+      @include item(1, $gap, 2);
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 270px;
+      @include item(3, $gap, 4);
     }
   }
 
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
   &__wrap {
-    padding: 24px;
+    padding-top: 30px;
+    padding-bottom: 24px;
 
     @media screen and (min-width: 1200px) {
-      padding: 30px;
+      padding-bottom: 30px;
     }
   }
 

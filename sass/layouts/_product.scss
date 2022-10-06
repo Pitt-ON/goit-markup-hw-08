@@ -2,11 +2,11 @@
   &__list {
     @extend %list;
 
-    @extend %flex;
+
   }
 
   &__item {
-    @extend %flex__item;
+
     width: 450px;
 
     @media screen and (min-width: 768px) {

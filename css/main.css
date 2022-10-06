@@ -13,20 +13,6 @@
   padding: 0;
 }
 
-.product__list, .team__list, .services__list, .features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-
-.product__item, .team__item, .services__item, .features__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-}
-
 .filters__title, .features__heading, .register-form__checkbox {
   position: absolute;
   width: 1px;
@@ -194,12 +180,12 @@ body {
   }
 }
 .header-contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: nule;
-      -ms-flex-pack: nule;
-          justify-content: nule;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: nule;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -433,9 +419,9 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 .register-form__agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -509,20 +495,28 @@ body {
     padding-bottom: 94px;
   }
 }
+.features__list {
+  display: block;
+}
+.features__item {
+  height: 224px;
+}
 @media screen and (min-width: 768px) {
   .features__item {
-    width: 354px;
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
+        flex-basis: calc((100% - 1 * 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: 270px;
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
   }
 }
 .features__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -530,7 +524,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  height: 120px;
+  height: 100%;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -546,9 +540,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   .features__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-wrap: flex;
+        flex-wrap: flex;
+    display: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -710,6 +704,8 @@ body {
   }
 }
 .clients__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,8 +716,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .clients__item {
   height: 92px;
@@ -957,9 +951,9 @@ body {
   width: 100%;
 }
 .product__overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1104,9 +1098,9 @@ body {
   }
 }
 .modal__btn-closed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1145,9 +1139,9 @@ body {
   height: 44px;
 }
 .socials__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1273,9 +1267,9 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1347,9 +1341,9 @@ body {
 }
 
 .menu-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1405,9 +1399,9 @@ body {
 }
 
 .menu-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: flex;
+      flex-wrap: flex;
+  display: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

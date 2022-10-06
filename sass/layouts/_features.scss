@@ -13,9 +13,9 @@
     @extend %list;
     display: block;
 
-    @media screen and (min-width: 768px) {
-      @include flex(flex, center, center, $gap, wrap);
-    }
+    // @media screen and (min-width: 768px) {
+    //   @include flex(flex, center, center, wrap);
+    // }
   }
 
   &__item {

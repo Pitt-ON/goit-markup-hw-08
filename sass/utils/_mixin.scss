@@ -4,12 +4,12 @@
   background-color: $bgc;
 }
 
-@mixin flex($d, $jc, $ai, $gap: $gap, $fw) {
+@mixin flex($fw: null, $d: flex, $jc: center, $ai: center, $gap: $gap) {
+  flex-wrap: $fw;
   display: $d;
   justify-content: $jc;
   align-items: $ai;
   gap: $gap;
-  flex-wrap: $fw;
 }
 
 @mixin item($q-gap, $gap, $q-item) {

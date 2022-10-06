@@ -75,9 +75,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 .header__logo {
   padding-top: 16px;
@@ -85,7 +95,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__logo {
-    margin-right: 87px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -115,7 +124,6 @@ body {
           align-items: center;
   gap: 50px;
 }
-
 .nav__link {
   position: relative;
   display: block;
@@ -155,6 +163,10 @@ body {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
     margin-left: auto;
   }
 }

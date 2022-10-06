@@ -2,8 +2,11 @@
   border-bottom: $header-brd-cl;
 
   &__container {
-    display: flex;
-    align-items: center;
+    @include flex(null, flex, space-between, center, null);
+
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
   }
 
   &__logo {
@@ -11,7 +14,6 @@
     padding-bottom: 16px;
 
     @media screen and (min-width: 768px) {
-      margin-right: 87px;
       padding-top: 26px;
       padding-bottom: 26px;
     }

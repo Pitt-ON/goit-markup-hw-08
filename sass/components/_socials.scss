@@ -1,9 +1,7 @@
 .socials {
   @extend %list;
 
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  @include flex(null, flex, center, null, 10px);
 
   &__item {
     width: 44px;

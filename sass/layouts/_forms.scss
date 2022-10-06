@@ -97,9 +97,7 @@
   }
 
   &__agreement {
-    @include flex(flex, center, center);
-
-    gap: 7px;
+    @include flex(null, flex, center, center, 7px);
 
     margin-bottom: 30px;
   }

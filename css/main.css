@@ -1080,11 +1080,15 @@ body {
           transform: translateY(0);
 }
 .product__features {
-  overflow-y: scroll;
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  .product__features {
+    overflow-y: scroll;
+  }
 }
 .product__desc {
   padding: 20px 24px;

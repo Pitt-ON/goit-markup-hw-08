@@ -20,14 +20,11 @@
   &__list {
     @extend %list;
 
-
+    @include flex();
   }
 
   &__item {
-
-
-    width: 370px;
-    $items: 3;
+    width: 100%;
   }
 
   &__thumb {

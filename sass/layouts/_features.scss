@@ -13,16 +13,21 @@
     @extend %list;
     display: block;
 
-    // @media screen and (min-width: 768px) {
-    //   @include flex(flex, center, center, wrap);
-    // }
+    @media screen and (min-width: 768px) {
+      @include flex(wrap);
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: start;
+    }
   }
 
   &__item {
-    height: 224px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       @include item(1, $gap, 2);
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -30,16 +35,21 @@
     }
   }
 
-  &__wrap {
-    @include flex(flex, center, center);
+  &__item:last-child {
+    margin-bottom: 0;
+  }
 
-    height: 100%;
+  &__wrap {
+    @include flex();
+
+    height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
     background-color: $team-bg-cl;
   }
 
   &__title {
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -48,8 +58,8 @@
     text-transform: uppercase;
     color: $basic-txt-cl;
 
-    @media screen and (max-width: 767px) {
-      @include flex(flex, center, center);
+    @media screen and (min-width: 767px) {
+      text-align: start;
     }
   }
 

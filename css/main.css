@@ -498,13 +498,37 @@ body {
 .features__list {
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .features__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 .features__item {
-  height: 224px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
         flex-basis: calc((100% - 1 * 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -513,10 +537,13 @@ body {
         flex-basis: calc((100% - 3 * 30px) / 4);
   }
 }
+.features__item:last-child {
+  margin-bottom: 0;
+}
 .features__wrap {
-  -ms-flex-wrap: flex;
-      flex-wrap: flex;
-  display: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -524,12 +551,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  height: 100%;
+  height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
 .features__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -538,18 +566,9 @@ body {
   text-transform: uppercase;
   color: #212121;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .features__title {
-    -ms-flex-wrap: flex;
-        flex-wrap: flex;
-    display: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
+    text-align: start;
   }
 }
 .features__text {

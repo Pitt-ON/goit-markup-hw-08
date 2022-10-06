@@ -877,7 +877,7 @@ body {
 }
 
 .foofer__wrap {
-  min-width: 232px;
+  min-width: 231px;
   text-align: center;
 }
 @media screen and (max-width: 1199px) {
@@ -1266,11 +1266,12 @@ body {
 }
 
 .subscription {
-  margin: 0 auto;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription {
     width: 450px;
+    margin: 0 auto;
   }
 }
 .subscription__title {
@@ -1298,10 +1299,15 @@ body {
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscription__label {
+    margin-right: 12px;
+  }
+}
 .subscription__input {
   display: inline-block;
   width: 100%;
-  height: 50px;
+  height: 100%;
   padding: 15px;
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1321,7 +1327,6 @@ body {
 @media screen and (min-width: 1200px) {
   .subscription__input {
     width: 358px;
-    margin-right: 12px;
   }
 }
 .subscription__input:hover, .subscription__input:focus {
@@ -1358,16 +1363,15 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription__btn {
-  -ms-flex-wrap: flex;
-      flex-wrap: flex;
-  display: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
   gap: 10px;
   margin: 0 auto;
   background-color: #2196f3;

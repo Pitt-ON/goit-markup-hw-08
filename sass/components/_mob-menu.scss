@@ -1,5 +1,5 @@
 .menu-btn {
-    @include flex(flex, center, center);
+    @include flex();
 
     width: 40px;
     height: 40px;
@@ -44,7 +44,7 @@
 }
 
 .menu-toggle {
-    @include flex(flex, center, center);
+    @include flex();
 
     position: absolute;
     top: 10px;
@@ -71,31 +71,40 @@
     @extend %list;
 
     margin-bottom: auto;
-}
 
-.mobile-menu__link {
-    @extend %link;
-
-    display: block;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: calc(47 / 40);
-    letter-spacing: 0.02em;
-    color: $basic-txt-cl;
-    margin-bottom: 35px;
-    margin-left: auto;
-
-    transition: color $animation;
-
-    &:hover,
-    &:focus {
-        color: $accent-txt-cl;
+    &__item {
+        margin-bottom: 35px;
     }
 
-    &--current {
-        color: $accent-txt-cl;
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        @extend %link;
+
+        display: block;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: calc(47 / 40);
+        letter-spacing: 0.02em;
+        color: $basic-txt-cl;
+
+        margin-left: auto;
+
+        transition: color $animation;
+
+        &:hover,
+        &:focus {
+            color: $accent-txt-cl;
+        }
+
+        &--current {
+            color: $accent-txt-cl;
+        }
     }
 }
+
 
 .mobile-contacts {
     @extend %list;
@@ -131,9 +140,7 @@
 .mobile-socials {
     @extend %list;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    @include flex(wrap, flex, null, center, null);
 
     &__link {
         @extend %link;

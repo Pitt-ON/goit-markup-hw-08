@@ -2,16 +2,14 @@
   @include section(60px, 60px, $hdr-ftr-bg-cl);
 
   &__container {
+    display: block;
 
     @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
+
+      @include flex(wrap, flex, null, baseline, null);
     }
 
     @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
       flex-wrap: nowrap;
     }
   }

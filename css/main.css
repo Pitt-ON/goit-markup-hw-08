@@ -165,7 +165,7 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     margin-left: auto;
   }
@@ -179,30 +179,22 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-contacts__item {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-contacts__item {
-    margin-right: 30px;
+    gap: 30px;
   }
 }
 .header-contacts__link {
-  -ms-flex-wrap: flex;
-      flex-wrap: flex;
-  display: nule;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
-  gap: 10px;
+  gap: 8px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -213,6 +205,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-contacts__link {
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -222,6 +215,17 @@ body {
 }
 .header-contacts__icon {
   fill: currentColor;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__link--top {
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__link--bottom {
+    padding-bottom: 20px;
+  }
 }
 
 .hero {

@@ -1349,23 +1349,26 @@ body {
 }
 
 .filters__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 8px;
   max-width: 326px;
   height: 91px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filters__list {
-    max-width: 575px;
-    height: auto;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {

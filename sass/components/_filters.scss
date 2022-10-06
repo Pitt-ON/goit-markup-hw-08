@@ -4,21 +4,20 @@
 
 .filters__list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+
+  @include flex(wrap, flex, null, null, 8px);
 
   max-width: 326px;
   height: 91px;
+  align-content: space-between;
 
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    max-width: 575px;
-    height: auto;
+    max-width: 100%;
+    justify-content: center;
+    height: 100%;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {

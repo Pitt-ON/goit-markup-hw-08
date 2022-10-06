@@ -1185,16 +1185,15 @@ body {
   }
 }
 .modal__btn-closed {
-  -ms-flex-wrap: flex;
-      flex-wrap: flex;
-  display: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
   position: absolute;
   top: 8px;
   right: 8px;

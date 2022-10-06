@@ -40,7 +40,7 @@
   0px 1px 3px rgba(0, 0, 0, 0.12);
 
   &__btn-closed {
-    @include flex(flex, center, center);
+    @include flex(null, flex, center, center, null);
 
     position: absolute;
     top: 8px;

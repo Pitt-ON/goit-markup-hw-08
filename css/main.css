@@ -1170,7 +1170,7 @@ body {
 .modal {
   padding: 40px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1567,7 +1567,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .mobile-contacts__tel {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 }
 .mobile-contacts__mail {

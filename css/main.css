@@ -1565,6 +1565,11 @@ body {
   margin-bottom: 32px;
   margin-left: auto;
 }
+@media screen and (max-width: 479px) {
+  .mobile-contacts__tel {
+    font-size: 8vw;
+  }
+}
 .mobile-contacts__mail {
   display: block;
   font-weight: 500;

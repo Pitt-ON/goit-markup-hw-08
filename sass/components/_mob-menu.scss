@@ -105,7 +105,6 @@
     }
 }
 
-
 .mobile-contacts {
     @extend %list;
 
@@ -122,6 +121,10 @@
         color: $accent-txt-cl;
         margin-bottom: 32px;
         margin-left: auto;
+
+        @media screen and (max-width: 479px) {
+            font-size: 8vw;
+        }
     }
 
     &__mail {
@@ -141,6 +144,7 @@
     @extend %list;
 
     @include flex(wrap, flex, null, center, null);
+
 
     &__link {
         @extend %link;

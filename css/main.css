@@ -1001,6 +1001,9 @@ body {
     -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
         flex-basis: calc((100% - 1 * 30px) / 2);
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {

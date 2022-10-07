@@ -4,7 +4,7 @@
     display: block;
 
     @media screen and (min-width: 768px) {
-      @include flex(wrap, flex, start, start);
+      @include flex(wrap, flex, null, null);
     }
   }
 
@@ -14,6 +14,7 @@
     @media screen and (min-width: 768px) {
       @include item(1, $gap, 2);
       margin-bottom: 0;
+
     }
 
     @media screen and (min-width: 1200px) {

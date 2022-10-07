@@ -14,7 +14,6 @@
     @media screen and (min-width: 768px) {
       @include item(1, $gap, 2);
       margin-bottom: 0;
-      display: flex;
     }
 
     @media screen and (min-width: 1200px) {
@@ -32,6 +31,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
+      height: 100%;
     }
 
     transition: box-shadow $animation;

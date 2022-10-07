@@ -1001,9 +1001,6 @@ body {
     -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
         flex-basis: calc((100% - 1 * 30px) / 2);
     margin-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1030,6 +1027,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
 }
 .product__link:hover, .product__link:focus {
@@ -1187,13 +1185,13 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     width: 450px;
-    top: 60%;
+    top: 55%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    top: 60%;
+    top: 55%;
   }
 }
 .modal__btn-closed {

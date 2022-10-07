@@ -27,9 +27,9 @@
   width: 96%;
   height: auto;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
-    top: 50%;
+    top: 60%;
   }
 
   @media screen and (min-width: 1200px) {

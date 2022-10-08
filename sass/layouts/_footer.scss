@@ -1,41 +1,22 @@
 .footer {
   @include section(60px, 60px, $hdr-ftr-bg-cl);
 
-  // &__container {
-
-  //   @media screen and (min-width: 768px) {
-
-  //     @include flex(wrap, flex, null, baseline, null);
-  //   }
-
-  //   @media screen and (min-width: 1200px) {
-  //     flex-wrap: nowrap;
-  //   }
-  // }
+  &__container {
+    @media screen and (min-width: 1200px) {
+      @include flex(null, flex, space-around, baseline, null);
+    }
+  }
 
   &__tablet {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       @include flex(null, flex, space-around, baseline, null);
       margin-bottom: 60px;
     }
-  }
 
-  &__wrap {
-
-    // @media screen and (max-width: 1199px) {
-    //   margin-bottom: 60px;
-    // }
-
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //   margin-left: 76px;
-    //   margin-right: 165px;
-    //   margin-bottom: 60px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //   margin-right: 70px;
-    //   text-align: left;
-    // }
+    @media screen and (min-width: 1200px) {
+      @include flex(null, flex, start, baseline, 70px);
+      margin-right: 93px;
+    }
   }
 
   &__logo {
@@ -44,8 +25,8 @@
 
     text-align: center;
 
-    //   @media screen and (min-width: 1200px) {
-    //     text-align: left;
-    //   }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }

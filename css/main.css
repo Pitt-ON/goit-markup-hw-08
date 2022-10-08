@@ -844,6 +844,18 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__tablet {
     display: -webkit-box;
@@ -857,10 +869,30 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 70px;
+    margin-right: 93px;
+  }
+}
 .footer__logo {
   display: block;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
 }
 
 .footer-contacts {
@@ -870,6 +902,13 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-contacts {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    width: 231px;
+    text-align: left;
     margin-bottom: 0;
   }
 }
@@ -911,11 +950,6 @@ body {
 @media screen and (min-width: 768px) {
   .join {
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .join {
-    margin-right: 93px;
   }
 }
 .join__title {

@@ -13,32 +13,32 @@
   //   }
   // }
 
-  &__tablet {
-    margin-bottom: 60px;
+  // &__tablet {
 
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //   @include flex();
-    //   margin-bottom: 60px;
-    // }
-  }
-
-  // &__wrap {
-
-  //   @media screen and (max-width: 1199px) {
-  //     margin-bottom: 60px;
-  //   }
 
   //   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //     margin-left: 76px;
-  //     margin-right: 165px;
+  //     @include flex();
   //     margin-bottom: 60px;
   //   }
-
-  //   @media screen and (min-width: 1200px) {
-  //     margin-right: 70px;
-  //     text-align: left;
-  //   }
   // }
+
+  &__wrap {
+
+    // @media screen and (max-width: 1199px) {
+    //   margin-bottom: 60px;
+    // }
+
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //   margin-left: 76px;
+    //   margin-right: 165px;
+    //   margin-bottom: 60px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   margin-right: 70px;
+    //   text-align: left;
+    // }
+  }
 
   &__logo {
     display: block;

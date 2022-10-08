@@ -1,5 +1,7 @@
 .footer-contacts {
   font-style: normal;
+  text-align: center;
+
 
   &__list {
     @extend %list;

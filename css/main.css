@@ -181,6 +181,11 @@ body {
     gap: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .header-contacts__item {
+    margin-bottom: 10px;
+  }
+}
 .header-contacts__link {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -217,7 +222,6 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contacts__link--top {
-    margin-bottom: 10px;
     padding-top: 20px;
   }
 }

@@ -20,6 +20,12 @@
     gap: 30px;
   }
 
+  &__item {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
   &__link {
     @extend %link;
 
@@ -51,7 +57,6 @@
 
   &__link--top {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: 10px;
       padding-top: 20px;
     }
   }

@@ -1,8 +1,8 @@
 .header {
-  border-bottom: $header-brd-cl;
 
   &__container {
     @include flex(null, flex, space-between, center, null);
+    border-bottom: $header-brd-cl;
 
     @media screen and (min-width: 1200px) {
       justify-content: start;

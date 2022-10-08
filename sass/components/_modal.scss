@@ -27,14 +27,12 @@
   width: 96%;
   height: auto;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
-    top: 55%;
   }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
-    top: 55%;
   }
 
   background-color: $basic-bg-cl;

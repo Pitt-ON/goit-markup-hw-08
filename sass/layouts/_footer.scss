@@ -14,6 +14,28 @@
     }
   }
 
+  &__tablet {}
+
+  &__wrap {
+    min-width: 231px;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 76px;
+      margin-right: 165px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      text-align: left;
+    }
+  }
+
   &__logo {
     display: block;
     margin-bottom: 20px;
@@ -23,25 +45,5 @@
     @media screen and (min-width: 1200px) {
       text-align: left;
     }
-  }
-}
-
-.foofer__wrap {
-  min-width: 231px;
-  text-align: center;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 76px;
-    margin-right: 165px;
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-    text-align: left;
   }
 }

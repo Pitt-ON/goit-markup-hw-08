@@ -67,7 +67,7 @@
     padding: 20px;
 
     @media screen and (max-width: 480px) {
-      @include flex(null, flex, center, null, null);
+      align-items: start;
       overflow-y: scroll;
     }
 

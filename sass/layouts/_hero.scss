@@ -8,20 +8,20 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width: 481px) {
+    width: 100%;
+    max-width: 1600px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     min-height: 600px;
-
     padding-top: 200px;
     padding-bottom: 200px;
 
     background-color: $overline-bg-cl;
     box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
   }
+
 
   background-position: center;
   background-repeat: no-repeat;

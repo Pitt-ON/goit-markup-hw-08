@@ -881,7 +881,6 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     gap: 70px;
-    margin-right: 93px;
   }
 }
 .footer__logo {
@@ -1277,6 +1276,12 @@ body {
   .subscription {
     width: 450px;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    width: 570px;
+    margin-left: auto;
   }
 }
 .subscription__title {
